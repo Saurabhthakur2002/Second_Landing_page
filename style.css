@@ -1,0 +1,658 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+
+h6 {
+  color: rgb(137, 193, 64);
+}
+
+header.container-fluid .row .logo {
+  font-size: 20px;
+}
+header.container-fluid .row .logo .media img {
+  background: rgb(137, 193, 64);
+  border-radius: 40% 40% 50% 50%;
+}
+
+header.container-fluid .nav .nav-links a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 10px;
+}
+header.container-fluid .nav .nav-links a select {
+  border: none;
+}
+
+header.container-fluid .nav .nav-links.active a {
+  color: rgb(137, 193, 64);
+}
+
+.landingpage {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(Images/background.jfif);
+  background-size: cover;
+}
+.landingpage .content {
+  text-align: center;
+}
+.landingpage .content h1 {
+  position: relative;
+  font-size: 2em;
+  font-weight: bolder;
+}
+.landingpage .content h1:before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  right: 2%;
+  height: 50px;
+  width: 50px;
+  background: rgb(137, 193, 64);
+  -webkit-clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+          clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+}
+.landingpage .content .button {
+  background: rgb(137, 193, 64);
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+}
+.landingpage .content .difquotes .lifei {
+  position: relative;
+}
+.landingpage .content .difquotes .lifei::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  height: 2px;
+  width: 300%;
+  background-color: white;
+  z-index: -1;
+}
+.landingpage .content .difquotes .col {
+  z-index: 2;
+}
+.landingpage .content .difquotes .col .fa {
+  padding: 20px;
+  background: rgb(137, 193, 64);
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.landingpage .content .difquotes .col p {
+  margin-top: 10px;
+  font-size: 8px;
+}
+
+.contactus {
+  background: #fff;
+  margin: 1em;
+}
+.contactus .media-body .button {
+  padding: 10px 20px;
+  background: rgb(137, 193, 64);
+  color: #fff;
+  border: none;
+}
+.contactus .media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin-top: 1em;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/download1.jpg);
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+}
+.contactus .media .info i {
+  margin: 20px;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  background: rgb(137, 193, 64);
+  border-radius: 50%;
+}
+.contactus .media .info p {
+  position: relative;
+  color: rgb(137, 193, 64);
+  padding: 5px 20px;
+  font-size: 15px;
+  background: #fff;
+  font-weight: bold;
+}
+.contactus .media .info p::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 30px;
+  background: #fff;
+  z-index: 0;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.getaquote {
+  background: #fff;
+}
+.getaquote .container .media img {
+  width: auto;
+  height: 280px;
+  position: relative;
+}
+.getaquote .difquotes .lifei,
+.getaquote .housei,
+.getaquote .traveli,
+.getaquote .cari {
+  padding: 20px;
+  background: white;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+.getaquote .difquotes .lifei .fa,
+.getaquote .housei .fa,
+.getaquote .traveli .fa,
+.getaquote .cari .fa {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #000;
+}
+.getaquote .difquotes .lifei p,
+.getaquote .housei p,
+.getaquote .traveli p,
+.getaquote .cari p {
+  margin: 0;
+  font-size: 10px;
+  color: #000;
+}
+.getaquote .difquotes .lifei:hover,
+.getaquote .housei:hover,
+.getaquote .traveli:hover,
+.getaquote .cari:hover {
+  background: rgb(137, 193, 64);
+}
+.getaquote .difquotes .lifei:hover .fa,
+.getaquote .difquotes .lifei:hover p,
+.getaquote .housei:hover .fa,
+.getaquote .housei:hover p,
+.getaquote .traveli:hover .fa,
+.getaquote .traveli:hover p,
+.getaquote .cari:hover .fa,
+.getaquote .cari:hover p {
+  color: white;
+}
+.getaquote .media-body .button {
+  padding: 10px 20px;
+  background: rgb(137, 193, 64);
+  color: #fff;
+  border: none;
+}
+
+.faqs {
+  background: #fff;
+  padding: 20px;
+}
+.faqs h6 {
+  text-align: left;
+}
+.faqs h4 {
+  font-weight: bold;
+  text-align: left;
+}
+.faqs .media-body {
+  padding: 10px;
+  text-align: left;
+}
+.faqs .media-body .button {
+  padding: 10px 20px;
+  background: rgb(137, 193, 64);
+  color: #fff;
+  border: none;
+}
+.faqs .media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faqs .media .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 220px;
+  background: url(Images/img4.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.faqs .card {
+  font-size: 10px;
+  width: 80%;
+}
+
+.getaquote {
+  background: #fff;
+}
+.getaquote .container .media img {
+  width: 300px;
+  height: 245px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.getaquote .difquotes .lifei,
+.getaquote .housei,
+.getaquote .traveli,
+.getaquote .cari {
+  padding: 2px;
+  background: white;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+.getaquote .difquotes .lifei .fa,
+.getaquote .housei .fa,
+.getaquote .traveli .fa,
+.getaquote .cari .fa {
+  font-size: 20px;
+  color: #000;
+}
+.getaquote .difquotes .lifei p,
+.getaquote .housei p,
+.getaquote .traveli p,
+.getaquote .cari p {
+  margin: 0;
+  font-size: 10px;
+  color: #000;
+}
+.getaquote .difquotes .lifei:hover,
+.getaquote .housei:hover,
+.getaquote .traveli:hover,
+.getaquote .cari:hover {
+  background: rgb(137, 193, 64);
+}
+.getaquote .difquotes .lifei:hover .fa,
+.getaquote .difquotes .lifei:hover p,
+.getaquote .housei:hover .fa,
+.getaquote .housei:hover p,
+.getaquote .traveli:hover .fa,
+.getaquote .traveli:hover p,
+.getaquote .cari:hover .fa,
+.getaquote .cari:hover p {
+  color: white;
+}
+.getaquote .media-body .button {
+  padding: 10px 20px;
+  background: rgb(137, 193, 64);
+  color: #fff;
+  border: none;
+}
+
+.ourvision {
+  background: #fff;
+}
+.ourvision .media-body {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+}
+.ourvision .media-body .rating {
+  position: relative;
+  padding: 20px;
+  background: rgb(137, 193, 64);
+  width: 100%;
+}
+.ourvision .media-body .rating::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px 10px;
+  height: 60%;
+  width: 2px;
+  background: rgb(187, 215, 149);
+}
+.ourvision .media-body h4 {
+  font-size: 2em;
+  font-weight: bolder;
+  width: 80%;
+}
+.ourvision .media .row .col-lg {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ourvision .media {
+  padding: 0;
+}
+.ourvision .media .row .col-lg {
+  background: none;
+  transition: 0.6s all ease-in;
+  cursor: pointer;
+}
+.ourvision .media .row .col-lg:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Images/img3.png);
+  background-size: cover;
+}
+.ourvision .media .row .col-lg {
+  padding: 0;
+}
+.ourvision .media .row .col-lg .exinfo h6 {
+  font-size: 1em;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: rgb(137, 193, 64);
+}
+.ourvision .media .row .col-lg .exinfo p {
+  font-size: 8px;
+  color: #000;
+  font-weight: bold;
+}
+.ourvision .media .row .col-lg:hover .exinfo p {
+  color: white;
+}
+
+.latestnews {
+  background: #fff;
+}
+.latestnews .date {
+  position: absolute;
+  top: 5%;
+  left: -5%;
+  padding: 20px;
+  background: rgb(137, 193, 64);
+  color: white;
+  font-weight: bold;
+}
+.latestnews .slider {
+  visibility: hidden;
+}
+.latestnews .slider span.active {
+  font-weight: bold;
+}
+.latestnews h6 {
+  text-align: center;
+}
+.latestnews h4 {
+  font-weight: bold;
+  text-align: center;
+}
+.latestnews .card .author .fa {
+  padding: 5px;
+  color: rgb(137, 193, 64);
+}
+.latestnews .card-body a {
+  text-decoration: none;
+  color: rgb(137, 193, 64);
+  cursor: pointer;
+  font-weight: bold;
+}
+.latestnews .card-body .card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.latestnews .card-body .card-text {
+  font-size: 12px;
+}
+
+.insurance {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/img2.png);
+  /* background-repeat: no-repeat; */
+}
+.insurance .button {
+  position: relative;
+  background: rgb(137, 193, 64);
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.insurance .content {
+  margin: 2em;
+}
+.insurance .content h1 {
+  position: relative;
+  margin-top: 2em;
+}
+.insurance .content h1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: white;
+}
+.insurance .content h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: white;
+}
+.insurance .slider span {
+  font-size: 40px;
+  cursor: pointer;
+  color: rgb(137, 193, 64);
+}
+.insurance .slider span.active {
+  font-weight: bold;
+}
+
+.footer {
+  background: #fff;
+}
+.footer .media img {
+  background: rgb(137, 193, 64);
+  border-radius: 40% 40% 50% 50%;
+}
+
+.footerinfo {
+  padding: 0 2em;
+}
+
+.footerinfo h5 {
+  margin: 1em 0;
+  font-weight: bold;
+  color: rgb(137, 193, 64);
+  text-transform: capitalize;
+}
+
+.footerinfo .sicons {
+  margin-top: 1.5em;
+}
+.footerinfo .sicons .fa {
+  font-size: 18px;
+  padding: 0 12px 0 0;
+  color: rgb(137, 193, 64);
+}
+
+.footerinfo .contactinfo .fa {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footerinfo ul li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.footerinfo ul li:hover {
+  color: rgb(137, 193, 64);
+}
+
+@media only screen and (max-width: 350px) {
+  header.container-fluid .nav .nav-links a {
+    font-size: 5px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .container .media img {
+    display: none;
+  }
+  .latestnews .card-body .card-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .faqs .media .info {
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+  }
+  .faqs .media-body {
+    margin: 2em;
+    padding: 20px;
+    text-align: left;
+  }
+  .latestnews .card-body .card-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .getaquote .media img {
+    height: 200px;
+    width: 150px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  header.container-fluid .nav .nav-links a {
+    font-size: 16px;
+  }
+  .landingpage .content h1 {
+    position: relative;
+    font-size: 4em;
+  }
+  .landingpage .content h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8%;
+    height: 50px;
+    width: 50px;
+    background: rgb(137, 193, 64);
+    -webkit-clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+            clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+  }
+  .faqs .media .info {
+    height: 500px;
+    width: 600px;
+    background-size: cover;
+  }
+  .faqs .media-body {
+    margin: 2em;
+    padding: 20px;
+    text-align: left;
+  }
+  .faqs .media-body h6 {
+    text-align: left;
+  }
+  .faqs .media-body h4 {
+    font-weight: bold;
+    text-align: left;
+  }
+  .faqs .media-body ul li .card {
+    font-size: 15px;
+    width: 80%;
+  }
+  .ourvision .media-body {
+    width: 50%;
+  }
+  .latestnews {
+    margin: 2em;
+  }
+  .latestnews .card-body .card-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .latestnews .card-body .card-text {
+    font-size: 16px;
+  }
+  .latestnews h6 {
+    margin-left: 2em;
+    text-align: left;
+  }
+  .latestnews h4 {
+    font-weight: bold;
+    text-align: left;
+  }
+  .media .row .col-lg {
+    padding: 5px;
+  }
+  .media .row .col-lg .exinfo h6 {
+    font-size: 1em;
+  }
+  .media .row .col-lg .exinfo p {
+    font-size: 5px;
+  }
+  .latestnews .slider {
+    font-size: 4em;
+    color: rgb(137, 193, 64);
+    visibility: visible;
+    opacity: 1;
+  }
+  .container .media img {
+    width: 200px;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .getaquote .difquotes .lifei,
+  .getaquote .difquotes .housei,
+  .getaquote .difquotes .traveli,
+  .getaquote .difquotes .cari {
+    padding: 20px;
+    background: white;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    border: 1px solid #ddd;
+  }
+  .getaquote .difquotes .lifei .fa,
+  .getaquote .difquotes .housei .fa,
+  .getaquote .difquotes .traveli .fa,
+  .getaquote .difquotes .cari .fa {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #000;
+  }
+  .getaquote .difquotes .lifei p,
+  .getaquote .difquotes .housei p,
+  .getaquote .difquotes .traveli p,
+  .getaquote .difquotes .cari p {
+    margin: 0;
+    font-size: 10px;
+    color: #000;
+  }
+  .getaquote .container .media img {
+    width: 400px;
+    height: 495px;
+  }
+  .getaquote .media img {
+    opacity: 1;
+  }
+  .footerinfo ul li {
+    cursor: pointer;
+    padding: 10px;
+  }
+  .footerinfo h5 {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .getaquote .container .media img {
+    width: 400px;
+    height: 435px;
+  }
+}/*# sourceMappingURL=style.css.map */
